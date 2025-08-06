@@ -1,10 +1,10 @@
-# Simple Histogram Example
+# Coded by Rao
 # This script creates a histogram using R's built-in mtcars dataset
 
-# Load the built-in mtcars dataset
+# Loading the built-in mtcars dataset
 data(mtcars)
 
-# Create a simple histogram of miles per gallon (mpg)
+# Creating a simple histogram of miles per gallon (mpg)
 hist(mtcars$mpg, 
      main = "Histogram of Miles Per Gallon",
      xlab = "Miles Per Gallon (mpg)",
@@ -13,7 +13,7 @@ hist(mtcars$mpg,
      border = "black",
      breaks = 10)
 
-# Add some basic statistics to the plot
+# Adding some basic statistics to the plot
 abline(v = mean(mtcars$mpg), col = "red", lwd = 2, lty = 2)
 legend("topright", legend = paste("Mean =", round(mean(mtcars$mpg), 2)), 
        col = "red", lty = 2, lwd = 2)
